@@ -1,0 +1,33 @@
+# ===== Không bao giờ đưa lên GitHub: biến môi trường & khóa bí mật =====
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+*secret*
+*credentials*
+*.token
+service-account*.json
+
+# ===== Tệp rác của hệ điều hành và trình soạn thảo =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# ===== Thư mục tạm, nhật ký =====
+node_modules/
+*.log
+tmp/

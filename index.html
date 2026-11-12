@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Học viện Công nghệ MCI – Bản luyện tập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Biểu tượng SVG dùng chung (vẽ bằng mã, không tải từ mạng) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-cert" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/><path d="m9.5 9 1.8 1.8L14.8 7.3"/></symbol>
+    <symbol id="i-teacher" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-1a7 7 0 0 1 14 0v1"/><path d="M18 4h4M20 2v4"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></symbol>
+    <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M6 8a4 4 0 1 0 0 8c3 0 9-8 12-8a4 4 0 1 1 0 8c-3 0-9-8-12-8Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m8 10-2 2 2 2M16 10l2 2-2 2M13 9l-2 6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14a5 5 0 0 1 5 5"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-3h4v3"/></symbol>
+    <symbol id="i-news" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m3 18 5-5 4 4 3-3 6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4Z"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M10 7H6a2 2 0 0 0-2 2v3h5v5H4M20 7h-4a2 2 0 0 0-2 2v3h5v5h-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m7.5 12 3 3 6-6"/></symbol>
+  </svg>
+
+  <!-- Dải cảnh báo: bắt buộc, luôn ở đầu trang -->
+  <div class="practice-banner" role="note">
+    Bản luyện tập của học viên lớp CA04SE10, không phải website chính thức của MCI
+  </div>
+
+  <!-- 1. Thanh menu -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">Học viện Công nghệ MCI</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-menu" class="main-menu" aria-label="Menu chính">
+        <a href="#lien-he">Khóa học</a>
+        <a href="#doi-tac">Doanh nghiệp</a>
+        <a href="#lien-he">Lịch đào tạo</a>
+        <a href="#cam-nhan">Học viên</a>
+        <a href="#ban-tin">Bài viết</a>
+        <a href="#tai-sao">Về chúng tôi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 2. Ảnh bìa (banner) -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Học viện Công nghệ MCI</h1>
+          <p class="hero-sub">Khóa học dữ liệu, Big Data, AI và Automation cho người mới bắt đầu.</p>
+          <a href="#lien-he" class="btn btn-accent">Đăng ký tư vấn</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 300 220">
+            <rect x="10" y="10" width="280" height="200" rx="16" class="art-card"/>
+            <rect x="40" y="130" width="30" height="55" rx="4" class="art-bar1"/>
+            <rect x="85" y="100" width="30" height="85" rx="4" class="art-bar2"/>
+            <rect x="130" y="75" width="30" height="110" rx="4" class="art-bar1"/>
+            <rect x="175" y="50" width="30" height="135" rx="4" class="art-bar2"/>
+            <polyline points="55,115 100,85 145,62 190,38 240,30" class="art-line"/>
+            <circle cx="240" cy="30" r="6" class="art-dot"/>
+            <circle cx="250" cy="150" r="28" class="art-ring"/>
+            <path d="M250 122 A28 28 0 0 1 276 160 L250 150 Z" class="art-pie"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Số liệu -->
+    <section class="stats" aria-label="Số liệu">
+      <div class="container stats-grid">
+        <div class="stat"><strong>06</strong><span>Số năm hoạt động</span></div>
+        <div class="stat"><strong>04</strong><span>Cơ sở học tập tại Hà Nội và HCM</span></div>
+        <div class="stat"><strong>20.000+</strong><span>Học viên</span></div>
+        <div class="stat"><strong>700+</strong><span>Doanh nghiệp</span></div>
+        <div class="stat"><strong>95%</strong><span>Tốt nghiệp có việc làm</span></div>
+        <div class="stat"><strong>98%</strong><span>Khách hàng hài lòng</span></div>
+      </div>
+    </section>
+
+    <!-- 4. Tại sao nên chọn MCI? -->
+    <section id="tai-sao" class="section">
+      <div class="container">
+        <h2 class="section-title">Tại sao nên chọn MCI?</h2>
+        <div class="grid grid-3">
+          <article class="feature">
+            <svg class="icon"><use href="#i-cert"/></svg>
+            <h3>Cấp phép</h3>
+            <p>Nhận chứng nhận sau khóa học. Chứng nhận cấp phép của Sở Giáo dục - Đào tạo Hà Nội.</p>
+          </article>
+          <article class="feature">
+            <svg class="icon"><use href="#i-teacher"/></svg>
+            <h3>Đội ngũ giảng viên</h3>
+            <p>Giảng viên là chuyên gia từ 7-15 năm kinh nghiệm làm việc trong lĩnh vực phân tích dữ liệu.</p>
+          </article>
+          <article class="feature">
+            <svg class="icon"><use href="#i-refresh"/></svg>
+            <h3>Cập nhật &amp; cải tiến liên tục</h3>
+            <p>Chương trình học được cập nhật liên tục với công nghệ và xu hướng mới trong lĩnh vực phân tích dữ liệu.</p>
+          </article>
+          <article class="feature">
+            <svg class="icon"><use href="#i-infinity"/></svg>
+            <h3>Miễn phí học lại không giới hạn</h3>
+            <p>Hỗ trợ học viên học lại đến khi nắm vững kiến thức.</p>
+          </article>
+          <article class="feature">
+            <svg class="icon"><use href="#i-code"/></svg>
+            <h3>Chương trình học thực tế</h3>
+            <p>Các khóa học tập trung vào thực chiến, hơn 70% thời gian đào tạo là thực hành.</p>
+          </article>
+          <article class="feature">
+            <svg class="icon"><use href="#i-users"/></svg>
+            <h3>Đối tượng đa dạng</h3>
+            <p>Hỗ trợ học viên chỉnh sửa CV, định hướng xây dựng Portfolio và giới thiệu việc làm đến các doanh nghiệp đối tác.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Góp phần vào sự phát triển của các đối tác -->
+    <section id="doi-tac" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Góp phần vào sự phát triển của các đối tác</h2>
+        <div class="grid grid-6">
+          <div class="partner"><svg class="icon"><use href="#i-building"/></svg><span>[Tên đối tác]</span></div>
+          <div class="partner"><svg class="icon"><use href="#i-building"/></svg><span>[Tên đối tác]</span></div>
+          <div class="partner"><svg class="icon"><use href="#i-building"/></svg><span>[Tên đối tác]</span></div>
+          <div class="partner"><svg class="icon"><use href="#i-building"/></svg><span>[Tên đối tác]</span></div>
+          <div class="partner"><svg class="icon"><use href="#i-building"/></svg><span>[Tên đối tác]</span></div>
+          <div class="partner"><svg class="icon"><use href="#i-building"/></svg><span>[Tên đối tác]</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Đội ngũ giảng viên -->
+    <section id="giang-vien" class="section">
+      <div class="container">
+        <h2 class="section-title">Đội ngũ giảng viên</h2>
+        <div class="grid grid-4">
+          <article class="person"><div class="avatar c1"><svg class="icon"><use href="#i-teacher"/></svg></div><h3>[Tên giảng viên]</h3><p>[Chức danh, kinh nghiệm]</p></article>
+          <article class="person"><div class="avatar c2"><svg class="icon"><use href="#i-teacher"/></svg></div><h3>[Tên giảng viên]</h3><p>[Chức danh, kinh nghiệm]</p></article>
+          <article class="person"><div class="avatar c3"><svg class="icon"><use href="#i-teacher"/></svg></div><h3>[Tên giảng viên]</h3><p>[Chức danh, kinh nghiệm]</p></article>
+          <article class="person"><div class="avatar c1"><svg class="icon"><use href="#i-teacher"/></svg></div><h3>[Tên giảng viên]</h3><p>[Chức danh, kinh nghiệm]</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Bản tin nổi bật -->
+    <section id="ban-tin" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Bản tin nổi bật</h2>
+        <div class="grid grid-3">
+          <article class="post"><div class="thumb c2"><svg class="icon"><use href="#i-news"/></svg></div><div class="post-body"><h3>[Tiêu đề bài viết]</h3><p>[Tóm tắt bài viết]</p></div></article>
+          <article class="post"><div class="thumb c3"><svg class="icon"><use href="#i-news"/></svg></div><div class="post-body"><h3>[Tiêu đề bài viết]</h3><p>[Tóm tắt bài viết]</p></div></article>
+          <article class="post"><div class="thumb c1"><svg class="icon"><use href="#i-news"/></svg></div><div class="post-body"><h3>[Tiêu đề bài viết]</h3><p>[Tóm tắt bài viết]</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Hình ảnh và video đào tạo -->
+    <section id="hinh-anh" class="section">
+      <div class="container">
+        <h2 class="section-title">Hình ảnh và video đào tạo</h2>
+        <div class="gallery">
+          <div class="media media-big c1"><svg class="icon"><use href="#i-play"/></svg><span>[Video đào tạo]</span></div>
+          <div class="media c2"><svg class="icon"><use href="#i-image"/></svg><span>[Hình ảnh lớp học]</span></div>
+          <div class="media c3"><svg class="icon"><use href="#i-image"/></svg><span>[Hình ảnh lớp học]</span></div>
+          <div class="media c3"><svg class="icon"><use href="#i-image"/></svg><span>[Hình ảnh lớp học]</span></div>
+          <div class="media c2"><svg class="icon"><use href="#i-image"/></svg><span>[Hình ảnh lớp học]</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Học viên nói gì về MCI -->
+    <section id="cam-nhan" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Học viên nói gì về MCI</h2>
+        <div class="grid grid-3">
+          <figure class="quote"><svg class="icon"><use href="#i-quote"/></svg><blockquote>[Cảm nhận học viên]</blockquote><figcaption>[Tên học viên] · [Khóa học]</figcaption></figure>
+          <figure class="quote"><svg class="icon"><use href="#i-quote"/></svg><blockquote>[Cảm nhận học viên]</blockquote><figcaption>[Tên học viên] · [Khóa học]</figcaption></figure>
+          <figure class="quote"><svg class="icon"><use href="#i-quote"/></svg><blockquote>[Cảm nhận học viên]</blockquote><figcaption>[Tên học viên] · [Khóa học]</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Liên hệ chúng tôi -->
+    <section id="lien-he" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title left">Liên hệ chúng tôi</h2>
+          <h3 class="city">Hà Nội</h3>
+          <ul class="addr">
+            <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Cơ sở 1:</strong> Tầng 5, Tòa StarCity, 23 Lê Văn Lương, Thanh Xuân, Hà Nội</div></li>
+            <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Cơ sở 2:</strong> Tầng 2A, tòa nhà Mỹ Sơn, 62 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội</div></li>
+          </ul>
+          <h3 class="city">TP Hồ Chí Minh</h3>
+          <ul class="addr">
+            <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Cơ sở chính:</strong> Tòa nhà Xuri, 112 Cao Thắng, Phường Bàn Cờ, TP Hồ Chí Minh</div></li>
+            <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Cơ sở 2:</strong> 224 Điện Biên Phủ, Phường Xuân Hòa, TP Hồ Chí Minh</div></li>
+          </ul>
+          <ul class="addr">
+            <li><svg class="icon"><use href="#i-phone"/></svg><div><strong>Hotline:</strong> [số hotline — bản luyện tập không ghi số thật]</div></li>
+            <li><svg class="icon"><use href="#i-mail"/></svg><div><strong>Email:</strong> [email — bản luyện tập không ghi email thật]</div></li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h3>Đăng ký tư vấn</h3>
+          <form id="consult-form" novalidate>
+            <label for="f-name">Họ tên</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <p class="err" id="e-name"></p>
+
+            <label for="f-phone">Số điện thoại</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <p class="err" id="e-phone"></p>
+
+            <label for="f-course">Khóa học quan tâm</label>
+            <select id="f-course" name="course" required>
+              <option value="">-- Chọn khóa học --</option>
+              <optgroup label="Theo từng môn">
+                <option>Python Foundation in Data Analytics</option>
+                <option>SQL for Newbies</option>
+                <option>Power BI</option>
+                <option>Mastering VBA</option>
+                <option>Excel for Business Intelligence Analyst</option>
+              </optgroup>
+              <optgroup label="Theo lộ trình">
+                <option>Combo Power BI</option>
+                <option>Combo Python</option>
+                <option>Combo SQL</option>
+                <option>Business Analyst</option>
+              </optgroup>
+              <optgroup label="Chuyển ngành, đầy đủ">
+                <option>Data Analyst Professional</option>
+                <option>Business Intelligence Track</option>
+                <option>Data Engineer Track</option>
+                <option>AI Engineer Track</option>
+                <option>AI Mastery 2026</option>
+                <option>AI Workflow Mastery 2026</option>
+              </optgroup>
+            </select>
+            <p class="err" id="e-course"></p>
+
+            <button type="submit" class="btn btn-accent btn-full">Gửi thông tin</button>
+          </form>
+          <div id="thanks" class="thanks" hidden tabindex="-1">
+            <svg class="icon"><use href="#i-check"/></svg>
+            <p>Cảm ơn bạn đã quan tâm! Đây là bản luyện tập nên thông tin chưa được gửi đi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. Chân trang -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-brand">Học viện Công nghệ MCI</p>
+      <nav class="footer-menu" aria-label="Menu chân trang">
+        <a href="#lien-he">Khóa học</a>
+        <a href="#doi-tac">Doanh nghiệp</a>
+        <a href="#lien-he">Lịch đào tạo</a>
+        <a href="#cam-nhan">Học viên</a>
+        <a href="#ban-tin">Bài viết</a>
+        <a href="#tai-sao">Về chúng tôi</a>
+      </nav>
+      <p class="footer-note">Bản luyện tập của học viên lớp CA04SE10, không phải website chính thức của MCI.</p>
+      <p class="footer-note">Nội dung tóm từ mcivietnam.com, xem ngày 12/11/2026.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
